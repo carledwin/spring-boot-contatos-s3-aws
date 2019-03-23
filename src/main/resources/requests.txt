@@ -1,0 +1,14 @@
+Upload do arquivo
+POST - localhost:8081/upload
+Headers: 
+- Content-Type : application/json 
+BODY:
+{
+	"fileName": "fileUpload.txt",
+	"uploadFilePath":"src/main/resources/upload"
+}
+
+Download do arquivo
+GET - localhost:8081/download/fileUpload.txt
+Headers: 
+- Content-Type : application/json
